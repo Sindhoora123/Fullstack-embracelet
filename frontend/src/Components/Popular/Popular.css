@@ -1,0 +1,80 @@
+.popular {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 100px;
+    padding: 0px 30px;
+    
+}
+/* Heading Styles */
+.popular h1 {
+    color: #eb3b5d;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Divider */
+.popular hr {
+    width: 150px;
+    height: 5px;
+    border-radius: 50px;
+    background: #eb3b5d;
+    border: none;
+    margin-bottom: 30px;
+}
+
+/* Item Container */
+.popular-item {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 100%;
+}
+/* ---------- ≤ 1280px ---------- */
+@media screen and (max-width: 1280px) {
+  .popular h1 {
+    font-size: 36px;
+  }
+
+  .popular hr {
+    width: 130px;
+    height: 4px;
+  }
+}
+
+/* ---------- ≤ 1024px ---------- */
+@media screen and (max-width: 1024px) {
+  .popular h1 {
+    font-size: 32px;
+  }
+
+  .popular hr {
+    width: 120px;
+    height: 4px;
+  }
+
+  .popular-item {
+    gap: 15px;
+  }
+}
+
+/* ---------- ≤ 800px ---------- */
+@media screen and (max-width: 800px) {
+  .popular h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .popular hr {
+    width: 100px;
+    height: 3px;
+  }
+
+  .popular-item {
+    gap: 10px;
+    padding: 0 10px;
+  }
+}

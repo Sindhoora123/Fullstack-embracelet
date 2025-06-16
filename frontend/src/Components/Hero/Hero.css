@@ -1,0 +1,96 @@
+.hero{
+    height: 100vh;
+  background: linear-gradient(45deg, #080808, #3e3e3e);
+    display: flex;
+    
+    justify-content: center;align-items: center;
+}
+.hero-left{flex-direction: column;flex: 1;display: flex;justify-content: center;gap: 20px;
+padding-left: 180px;line-height: 1.1;}
+.hero-left h2{color: #fcfdf9;font-size: 26px;font-weight: 600;}
+.hero-left p{color: #fcfdf9;font-size: 100px;font-weight: 700;}
+.hero-hand-icon{display: flex;align-items: center;gap: 20px;}
+.hero-latest-btn{display: flex;justify-content: center;align-items: center;gap: 15px;width: 310px;height: 70px;border-radius: 75px;margin-top: 30px;background: #ff4141;color: white;font-size: 22px;font-weight: 500;}
+.hero-right{flex: 1;display: flex;justify-content: center;align-items: center;}
+.hero-right img{height: 500px;;width: 500px;border-radius: 10px;}
+/* ---------- HERO: ≤ 1280px ---------- */
+@media screen and (max-width: 1280px) {
+  .hero-left {
+    padding-left: 100px;
+  }
+
+  .hero-left p {
+    font-size: 80px;
+  }
+
+  .hero-left h2 {
+    font-size: 22px;
+  }
+
+  .hero-latest-btn {
+    width: 280px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .hero-right img {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+/* ---------- HERO: ≤ 1024px ---------- */
+@media screen and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    height: auto;
+  }
+
+  .hero-left {
+    padding-left: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-left p {
+    font-size: 64px;
+  }
+
+  .hero-left h2 {
+    font-size: 20px;
+  }
+
+  .hero-latest-btn {
+    width: 260px;
+    height: 56px;
+    font-size: 18px;
+  }
+
+  .hero-right img {
+    width: 400px;
+    height: 400px;
+  }
+}
+
+/* ---------- HERO: ≤ 800px ---------- */
+@media screen and (max-width: 800px) {
+  .hero-left p {
+    font-size: 48px;
+  }
+
+  .hero-left h2 {
+    font-size: 18px;
+  }
+
+  .hero-latest-btn {
+    width: 220px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .hero-right img {
+    width: 300px;
+    height: 300px;
+  }
+}

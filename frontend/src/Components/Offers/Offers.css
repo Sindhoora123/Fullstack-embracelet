@@ -1,0 +1,96 @@
+.offers{width: 65%;height: 60vh; display: flex;margin:auto;padding: 0px 140px;  background: linear-gradient(45deg, #080808, #3e3e3e);    justify-content: center;align-items: center;}
+.offers-right img{height: 300px;;width: 300px;border-radius: 10px;}
+.offers-left{flex-direction: column;flex: 1;display: flex;justify-content: center;gap: 20px;line-height: 1.1;}
+.offers-left h1{font-weight: 600; font-size: 50px;color: aliceblue;} 
+.offers-left p{font-weight: 600;font-size: 26px;color: aliceblue;}
+.offers-left button{border: 1px solid #ff4141; display: flex;justify-content: center;align-items: center;gap: 15px;width: 310px;height: 70px;border-radius: 75px;margin-top: 30px;background: #ff4141;color: white;font-size: 22px;font-weight: 500;}
+/* ---------- ≤ 1280px ---------- */
+@media screen and (max-width: 1280px) {
+  .offers {
+    width: 80%;
+    padding: 0px 100px;
+  }
+
+  .offers-left h1 {
+    font-size: 42px;
+  }
+
+  .offers-left p {
+    font-size: 22px;
+  }
+
+  .offers-left button {
+    width: 280px;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  .offers-right img {
+    width: 260px;
+    height: 260px;
+  }
+}
+
+/* ---------- ≤ 1024px ---------- */
+@media screen and (max-width: 1024px) {
+  .offers {
+    width: 90%;
+    flex-direction: column-reverse;
+    height: auto;
+    padding: 40px 40px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .offers-left {
+    align-items: center;
+  }
+
+  .offers-left h1 {
+    font-size: 36px;
+  }
+
+  .offers-left p {
+    font-size: 20px;
+  }
+
+  .offers-left button {
+    width: 260px;
+    height: 55px;
+    font-size: 18px;
+  }
+
+  .offers-right img {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* ---------- ≤ 800px ---------- */
+@media screen and (max-width: 800px) {
+  .offers {
+    width: 95%;
+    flex-direction: column-reverse;
+    padding: 30px 20px;
+    gap: 25px;
+  }
+
+  .offers-left h1 {
+    font-size: 30px;
+  }
+
+  .offers-left p {
+    font-size: 18px;
+  }
+
+  .offers-left button {
+    width: 240px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .offers-right img {
+    width: 200px;
+    height: 200px;
+  }
+}
